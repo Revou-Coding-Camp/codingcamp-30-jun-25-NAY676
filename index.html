@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Document</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div><a href="#" class="logo" aria-label="Web Logo">NAY</a></div>
+    <nav aria-label="Primary navigation">
+      <a href="#">Home</a>
+      <a href="#">Our Profile</a>
+      <a href="#">Portofolio</a>
+      <a href="#">Message Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="welcome-section" aria-label="Welcome message">
+      <h1>Hello World, Welcome To My Website</h1>
+      <p>Ini adalah website portofolio</p>
+      <div class="welcome-image" aria-hidden="true">
+      </div>
+    </section>
+
+
+    
+    <section class="headquarter-section" aria-labelledby="sec2-title">
+      <h2 id="sec2-title">Our Headquarter</h2>
+      <div class="sec2-list" role="list">
+        <div class="sec2-item" role="listitem">
+          <img src="img/gedung2.jpg" alt="Photo of Jakarta office building"/>
+          <!-- <div class="sec2-label">Jakarta</div> -->
+        </div>
+        <div class="sec2-item" role="listitem">
+          <img src="img/gedung3.jpg" alt="Photo of Bandung office building"/>
+          <!-- <div class="hq-label">Bandung</div> -->
+        </div>
+        <div class="sec2-item" role="listitem">
+          <img src="img/gedung2.jpg" alt="Photo of Surabaya office building"/>
+          <!-- <div class="hq-label">Surabaya</div> -->
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section aria-labelledby="message-us-heading" class="message-section">
+      <div class="message-form-container">
+        <h2 id="message-us-heading" class="messageUs">Message Us</h2>
+        <form id="messageForm" class="grid grid-cols-1 md:grid-cols-2 gap-6" novalidate>
+          <div class="flex flex-col">
+            <label for="name" class="form-label">Nama</label>
+            <input id="name" name="name" class="form-input" type="text" placeholder="Nama" required aria-required="true" aria-describedby="nameError"/>
+            
+          </div>
+          <div class="flex flex-col">
+            <label for="birthdate" class="form-label">Tanggal Lahir</label>
+            <input id="birthdate" name="birthdate" class="form-input" type="date" required aria-required="true" aria-describedby="birthdateError" />
+            
+          </div>
+    
+          <fieldset class="flex flex-col md:col-span-2">
+            <legend class="form-label">Jenis Kelamin</legend>
+            <label><input type="radio" name="gender" value="Laki-laki" required aria-required="true" /> <span class="form-radio-label">Laki-laki</span></label>
+            <label><input type="radio" name="gender" value="Perempuan" /> <span class="form-radio-label">Perempuan</span></label>
+          </fieldset>
+    
+          <div class="flex flex-col md:col-span-2">
+            <label for="message" class="form-label">Pesan</label>
+            <textarea id="message" name="message" class="form-textarea" rows="4" placeholder="Pesan" required aria-required="true" aria-describedby="messageError"></textarea>
+            
+          </div>
+    
+          <div class="md:col-span-2">
+            <button type="submit" class="btn-submit" aria-label="Submit message form">Submit</button>
+          </div>
+        </form>
+      </div>
+      
+      <section aria-live="polite" aria-atomic="true" aria-relevant="additions" class="mt-8">
+        <label for="responseOutput" class="form-label">Response</label>
+        <pre id="responseOutput" class="message-display" tabindex="0" aria-live="polite" aria-atomic="true" aria-relevant="additions" role="region" aria-label="Form submission response output" readonly></pre>
+      </section>
+    </section>
+
+
+
+  </main>
+  <footer> Copyright By NAY</footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

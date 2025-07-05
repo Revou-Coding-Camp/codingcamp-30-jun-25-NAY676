@@ -1,0 +1,138 @@
+.message-section {
+    padding: 28px 32px;
+    display: flex;
+    gap: 48px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+  }
+  .message-form-container {
+    flex: 1 1 320px;
+    max-width: 480px;
+  }
+
+  .message-form-container h3 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #222;
+    user-select: none;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+  }
+  .message-form-container{
+    transition: border-color 0.2s ease;
+  }
+  .message-form-container:focus, .textarea:focus {
+    outline: none;
+    border-color: #fbbf24; /* yellow */
+    background-color: #fffbeb;
+  }
+
+  label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #333;
+    user-select: none;
+  }
+
+  input[type="text"],
+  input[type="date"],
+  textarea {
+    flex: 1;
+    padding: 6px 10px;
+    font-size: 1rem;
+    border: 1px solid #888;
+    border-radius: 3px;
+    font-family: inherit;
+    resize: vertical;
+    min-height: 28px;
+  }
+
+  input[type="radio"] {
+    transform: scale(1.1);
+    margin-right: 4px;
+    cursor: pointer;
+  }
+  textarea {
+    min-height: 100px;
+    padding-top: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+  }
+
+  .gender-options {
+    display: flex;
+    gap: 16px;
+  }
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px 0;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 1px solid #888;
+    background-color: #ddd;
+    transition: background-color 0.3s ease;
+    user-select: none;
+  }
+
+  button[type="submit"]:hover,
+    button[type="submit"]:focus {
+      background-color: #c4b800;
+      border-color: #d0c000;
+      color: #222;
+      outline: none;
+    }
+
+
+
+
+
+
+
+
+
+
+    .sec2-list {
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+      }
+      .sec2-circle {
+        border: 1px solid #888;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.9rem;
+        color: #444;
+        position: relative;
+        background-color: white;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.07);
+        cursor: default;
+      }
+    
+      .sec2-label {
+        margin-top: 12px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #222;
+        user-select: none;
+      }
+      .sec2-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
